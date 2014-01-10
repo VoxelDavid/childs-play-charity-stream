@@ -35,28 +35,28 @@ end
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
-###
-# Helpers
-###
 
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
+##
+## Helpers
+##
 
-# Reload the browser automatically whenever files change
-# activate :livereload
+# All custom helpers are loaded automatically from the /helpers/ directory.
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+# Turns files into directories. /foo.html -> /foo/index.html
+activate :directory_indexes
 
-set :css_dir, 'stylesheets'
+# Special directories in the project root
+set :build_dir,   'build'
+set :data_dir,    'data'
+set :helpers_dir, 'helpers'
 
-set :js_dir, 'javascripts'
+# Special directories in /source/
+set :layouts_dir, '_layouts'
 
-set :images_dir, 'images'
+# Assets in source/
+set :css_dir,    'assets/css'
+set :js_dir,     'assets/js'
+set :images_dir, 'assets/img'
 
 # Build-specific configuration
 configure :build do
