@@ -14,9 +14,9 @@ compass_config do |config|
 end
 
 
-###
-# Page options, layouts, aliases and proxies
-###
+##
+## Page options, layouts, aliases and proxies
+##
 
 # Per-page layout changes:
 #
