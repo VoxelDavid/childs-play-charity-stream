@@ -7,5 +7,8 @@ gem "middleman", "~>3.2.1"
 # Responsive Compass grid system (http://susy.oddbird.net)
 gem "susy"
 
+# Modular scale (https://github.com/Team-Sass/modular-scale)
+gem "modular-scale"
+
 # For faster file watcher updates on Windows:
 gem "wdm", "~> 0.1.0"

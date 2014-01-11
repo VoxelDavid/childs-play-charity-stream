@@ -50,6 +50,10 @@ GEM
       sprockets (~> 2.1)
       sprockets-helpers (~> 1.0.0)
       sprockets-sass (~> 1.0.0)
+    modular-scale (1.0.6)
+      compass (>= 0.12.1)
+      sass (>= 3.2.0)
+      sassy-math (>= 1.5)
     multi_json (1.8.4)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -60,6 +64,8 @@ GEM
     rb-kqueue (0.2.0)
       ffi (>= 0.5.0)
     sass (3.2.13)
+    sassy-math (1.5)
+      compass (~> 0.11)
     sprockets (2.10.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -85,5 +91,6 @@ PLATFORMS
 
 DEPENDENCIES
   middleman (~> 3.2.1)
+  modular-scale
   susy
   wdm (~> 0.1.0)

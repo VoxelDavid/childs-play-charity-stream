@@ -4,11 +4,6 @@
 //
 // View 'screen.scss' for website styling.
 
-// Import Compass plugins
-@import "susy"; // susy.oddbird.net
-
-// Susy variables
-$total-columns: 12;
-$column-width: 4em;
-$gutter-width: 1em;
-$grid-padding: $gutter-width;
+// Compass plugins – first added in config.rb.
+@import "susy";
+@import "modular-scale";
