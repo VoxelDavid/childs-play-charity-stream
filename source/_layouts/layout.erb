@@ -5,7 +5,16 @@
     <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Name Pending &ndash; <%= current_page.data.title %></title>
+    <title>
+    <%=
+      # Display title as "Page Title – Site Title" unless 'title' frontmatter is missing.
+      if current_page.data.title
+        current_page.data.title + " &ndash; " + data.main.title
+      else
+        data.main.title
+      end
+    %>
+    </title>
 
     <link rel="shortcut icon" href="/assets/img/favicon.png">
     <link rel="stylesheet" href="/assets/css/screen.css">
