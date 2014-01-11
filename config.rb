@@ -7,10 +7,9 @@
 compass_config do |config|
   # Require Compass plugins.
   require "susy"
-  require "modular-scale"
 
   # Set output style. :expanded, :nested, :compact or :compressed
-  config.output_style = :compact
+  config.output_style = :compressed
 end
 
 
