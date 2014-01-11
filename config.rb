@@ -45,17 +45,17 @@ end
 activate :directory_indexes
 
 # Special directories in the project root
-set :build_dir,   'build'
-set :data_dir,    'data'
-set :helpers_dir, 'helpers'
+config[:build_dir]   = 'build'
+config[:data_dir]    = 'data'
+config[:helpers_dir] = 'helpers'
 
 # Special directories in /source/
-set :layouts_dir, '_layouts'
+config[:layouts_dir] = '_layouts'
 
 # Assets in source/
-set :css_dir,    'assets/css'
-set :js_dir,     'assets/js'
-set :images_dir, 'assets/img'
+config[:css_dir]     = 'assets/css'
+config[:js_dir]      = 'assets/js'
+config[:images_dir]  = 'assets/img'
 
 # Build-specific configuration
 configure :build do
