@@ -20,12 +20,113 @@
 /* ^ MAIN
 ===================================*/
 
+// Import partials
 @import "base";
 @import "reset";
+
+body {
+    /* Always keep the vertical scroll bar active for consistency between pages.
+    If a page doesn't have the scroll bar, going to a page that does causes
+    everything to shift over to the left. */
+    overflow-y: scroll;
+}
 
 
 /* ^ TYPOGRAPHY
 ===================================*/
+
+// Headers
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+h1, .alpha   {
+
+}
+
+h2, .beta    {
+
+}
+
+h3, .gamma   {
+
+}
+
+h4, .delta   {
+
+}
+
+h5, .epsilon {
+
+}
+
+h6, .zeta    {
+
+}
+
+
+// Paragraphs
+
+p {
+
+}
+
+
+// Links
+
+a:link, a:visited {
+
+}
+
+a:hover, a:active {
+
+}
+
+
+// Lists
+
+ul {
+
+}
+
+li {
+
+}
+
+ul ul,
+ol ol {
+
+}
+
+
+// Images
+
+img {
+
+}
+
+
+// Quotes
+
+blockquote {
+
+}
+
+q {
+
+}
+
+
+// Pre/Code
+
+pre {
+
+}
+
+code {
+
+}
 
 
 /* ^ RESPONSIVE RULES
