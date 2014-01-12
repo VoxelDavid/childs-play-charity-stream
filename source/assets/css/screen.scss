@@ -11,6 +11,7 @@
 // Table of Contents:
 // - Main
 // - Typography
+// - Structure
 // - Responsive Rules
 //
 // Copyright (c) 2014 David Minnerly
@@ -126,6 +127,24 @@ pre {
 
 code {
 
+}
+
+
+/* ^ STRUCTURE
+===================================*/
+
+.container {
+    @include susy-grid-background;
+
+    @include container;
+}
+
+.section-about {
+    @include span-columns(7);
+}
+
+.section-donation-widgets {
+    @include span-columns(5 omega);
 }
 
 
