@@ -3,11 +3,25 @@
 // and importing Compass Plugins.
 //
 // View 'screen.scss' for website styling.
+//
+// Table of Contents:
+// - Compass & Imports
+// - Variables
+//
+// Copyright (c) 2014 David Minnerly
+// See LICENSE.txt for details.
+
+
+/* ^ COMPASS & IMPORTS
+===================================*/
 
 // Compass Modules
+
 @import "compass/css3";
 
+
 // Susy
+
 @import "susy";
 
 $total-columns: 8;
@@ -15,8 +29,28 @@ $column-width: 4em;
 $gutter-width: 1em;
 $grid-padding: $gutter-width;
 
+
 // Modular Scale — Version 2.0+ is required.
+
 @import "modular-scale";
 
 $ms-base: 1em 1.5em; // Font size and line height
 $ms-ratio: $golden;
+
+
+/* ^ VARIABLES
+===================================*/
+
+// Typography
+
+$font-stack: "Droid Sans";
+$header-font-stack: "Droid Sans"; // This needs changing. The same font for headers and text don't contrast enough.
+
+$text-color: #333333;
+
+
+// Selection
+
+// For later. Used for when you click and drag over text — colors need to be picked..
+// $selection-background: ;
+// $selection-color: ;
