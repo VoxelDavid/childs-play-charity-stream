@@ -21,15 +21,29 @@
 /* ^ MAIN
 ===================================*/
 
-// Import partials
+// Import Partials
+
 @import "base";
 @import "reset";
+
+
+// Base Styles
 
 body {
     /* Always keep the vertical scroll bar active for consistency between pages.
     If a page doesn't have the scroll bar, going to a page that does causes
     everything to shift over to the left. */
     overflow-y: scroll;
+}
+
+h1, h2, h3, h4, h5, h6,
+ul, ol, dd,
+p, figure, blockquote,
+pre, table, fieldset, hr {
+    font-size: ms(0);
+    line-height: ms(1);
+    font-family: "Droid Sans";
+    margin-bottom: ms(1);
 }
 
 
