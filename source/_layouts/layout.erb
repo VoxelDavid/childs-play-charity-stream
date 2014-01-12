@@ -23,6 +23,24 @@
   </head>
 
   <body>
+    <nav class="container primary-nav">
+      <ul class="primary-nav-primary-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="#">Donate to Child's Play</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="http://twitter.com/sil3ntscript3r">Twitter</a></li>
+      </ul>
+    </nav>
+
     <%= yield %>
+
+    <div class="container">
+      <section class="section-footer">
+        <ul class="footer-links">
+          <li><a href="http://github.com/voxeldavid/childs-play-charity-stream/">Website Source</a></li>
+          <li>Made by <a href="http://voxeldavid.com">David Minnerly</a></li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
