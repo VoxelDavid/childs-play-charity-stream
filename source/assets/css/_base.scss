@@ -24,9 +24,9 @@
 
 @import "susy";
 
-$total-columns: 8;
-$column-width: 4em;
-$gutter-width: 1em;
+$total-columns: 12;
+$column-width: 3em;
+$gutter-width: 1.5em;
 $grid-padding: $gutter-width;
 
 
@@ -34,8 +34,10 @@ $grid-padding: $gutter-width;
 
 @import "modular-scale";
 
-$ms-base: 1em 1.5em; // Font size and line height
-$ms-ratio: $golden;
+$ms-base: 1.063em 1.5em; // Font size and line height
+$ms-ratio: $fifth;
+
+
 
 
 /* ^ VARIABLES
