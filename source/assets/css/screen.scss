@@ -42,7 +42,9 @@ p, figure, blockquote,
 pre, table, fieldset, hr {
     font-size: ms(0);
     line-height: ms(1);
-    font-family: "Droid Sans";
+    font-family: $font-stack;
+    color: $text-color;
+
     margin-bottom: ms(1);
 }
 
