@@ -34,8 +34,10 @@ $grid-padding: $gutter-width;
 
 @import "modular-scale";
 
-$ms-base: 1.063em 1.5em; // Font size and line height
-$ms-ratio: $fifth;
+// I don't entirely understand how to use Modular Scale so I'm
+// using a larger second number for more numbers to work with.
+$ms-base: 1em 4em; // Font size and line height
+$ms-ratio: $golden;
 
 
 // Fonts
