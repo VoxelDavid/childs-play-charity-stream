@@ -193,6 +193,21 @@ code {
 }
 
 
+// Twitch Embeds
+
+.twitch-embed-stream,
+.twitch-embed-chat {
+    height: 24em;
+    display: block;
+    margin-bottom: ms(0);
+}
+
+.twitch-embed-stream {
+    @include span-columns(8);
+}
+
+.twitch-embed-chat {
+    @include span-columns(4 omega);
 }
 
 
