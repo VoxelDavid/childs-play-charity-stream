@@ -149,10 +149,22 @@ code {
 /* ^ STRUCTURE
 ===================================*/
 
-.container {
-    @include susy-grid-background;
+// Grid Container
 
+.container {
+    // @include susy-grid-background;
     @include container;
+}
+
+// columns: 12
+// column width: 4em
+// gutter width: 1.5em
+// padding: 1.5em
+@include with-grid-settings(16, 3em, 1em, 1.5em) {
+    .container-expanded {
+        // @include susy-grid-background;
+        @include container;
+    }
 }
 
 .section-about {
