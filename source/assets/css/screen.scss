@@ -82,17 +82,21 @@ a:hover, a:active {
 
 // Lists
 
-ul {
-
+ul, ol {
+    list-style-position: outside;
 }
 
-li {
+ol li {
+    list-style-type: decimal;
+}
 
+ul li {
+    list-style-type: square;
 }
 
 ul ul,
 ol ol {
-
+    margin-left: ms(1);
 }
 
 
