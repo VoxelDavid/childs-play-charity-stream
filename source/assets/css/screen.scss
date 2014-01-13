@@ -186,20 +186,19 @@ code {
 }
 
 
-// Twitch Embeds
+// Video Player
 
-.twitch-embed-stream,
-.twitch-embed-chat {
+.section-video-player {
     height: 24em;
-    display: block;
-    margin-bottom: ms(0);
+    margin-top: ms(2);
+    margin-bottom: ms(3);
 }
 
 .twitch-embed-stream {
     @include span-columns(8);
 }
 
-.twitch-embed-chat {
+.twitch-embed-chat   {
     @include span-columns(4 omega);
 }
 
