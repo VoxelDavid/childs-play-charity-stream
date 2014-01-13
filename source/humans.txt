@@ -1,0 +1,22 @@
+
+# humanstxt.org
+
+##
+## TEAM
+##
+
+Master of Ceremonies (Host): Matthew Jones
+Twitter: @sil3ntscript3r
+Location: Tennessee
+
+Developer & Designer: David Minnerly
+Site: http://voxeldavid.com
+Twitter: @voxeldavid
+Location: New York
+
+##
+## SITE
+##
+
+Standards: HTML5, CSS3
+Software: Middleman, Git, Sublime Text 3
