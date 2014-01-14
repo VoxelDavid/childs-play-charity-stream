@@ -56,6 +56,15 @@ $header-font-stack: "Droid Sans"; // This needs changing. The same font for head
 $text-color: #333333;
 $header-color: #333333;
 
+
+// Design
+
+$link-color         : #007CE3;
+$link-visited-color : $link-color;
+$link-hover-color   : #FF6200;
+$link-active-color  : $link-hover-color;
+
+
 // Selection
 
 // For later. Used for when you click and drag over text — colors need to be picked..
