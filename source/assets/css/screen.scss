@@ -170,29 +170,40 @@ code {
 
 }
 
+// Primary Navigation
 .section-donation-widgets {
 
+// .primary-nav {
 }
 
+// }
 
-// Navigation
+//     .primary-nav li {
+//         float: left;
+//         margin-right: 1em;
+//         list-style-type: none;
+//     }
 
-.primary-nav {
+//     .primary-nav li:last-child {
+//         margin-right: 0;
+//     }
 
+// .primary-nav-primary-links li a,
+// .primary-nav-secondary-links li a {
+//     display: inline-blocks;
+//     background-color: #eee;
+// }
+
+
+// Footer Links
+
+.footer-links {
+    text-align: center;
 }
 
-.primary-nav li {
-    margin-right: 1em;
-}
-.primary-nav li:last-child {
-    margin-right: 0;
-}
-
-.primary-nav li,
 .footer-links li {
     display: inline-block;
 }
-
 
 .footer-links li:after {
     content: "\0020\00B7"; // Space and Middle Dot ( ·)
