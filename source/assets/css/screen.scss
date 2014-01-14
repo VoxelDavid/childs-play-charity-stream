@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 h1, .alpha   { font-size: ms(3);  }
 h2, .beta    { font-size: ms(2);  }
 h3, .gamma   { font-size: ms(1);  }
+// I don't intend for h4-h6 to be used, but I styled them just incase.
 h4, .delta   { font-size: ms(0);  }
 h5, .epsilon { font-size: ms(-1); }
 h6, .zeta    { font-size: ms(-2); }
