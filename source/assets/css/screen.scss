@@ -168,15 +168,14 @@ code {
 
 // Sections
 
-.section-about {
-
+.section-donation-widgets {
+    @include span-columns(5 omega);
 }
+
 
 // Primary Navigation
-.section-donation-widgets {
 
 // .primary-nav {
-}
 
 // }
 
