@@ -220,5 +220,17 @@ code {
 }
 
 
+// Other Classes
+
+.gradient-line:before {
+    @include background-image(linear-gradient(left center, #fff, #bbb, #fff));
+    content: "";
+    display: block;
+    height: 1px;
+    margin: ms(2) auto ms(1);
+    max-width: 600px;
+}
+
+
 /* ^ RESPONSIVE RULES
 ===================================*/
