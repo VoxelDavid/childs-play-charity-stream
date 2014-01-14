@@ -9,7 +9,8 @@
 
     <title>
     <%=
-      # Display title as "Page Title – Site Title" unless 'title' frontmatter is missing.
+      # If 'title' frontmatter is found, display as "Page Title – Site title",
+      # otherwise display as "Site Title".
       if current_page.data.title
         current_page.data.title + " &ndash; " + data.main.title
       else
