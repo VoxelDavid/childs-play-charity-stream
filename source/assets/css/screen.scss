@@ -116,7 +116,13 @@ img {
 // Quotes
 
 blockquote {
+    font-style: italic;
+    border-left: 2px solid #FF6200;
+    padding-right: 10em;
 
+    /* Push out the blockquote so the border is outside of the page */
+    margin-left: -0.9rem;
+    padding-left: 0.8rem; /* With 2px border, this padding must be .1 less than the margin. */
 }
 
 q {
