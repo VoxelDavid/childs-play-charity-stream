@@ -207,6 +207,8 @@ code {
 }
 
 .footer-links li:after {
+    padding: 0 0.3em;
+    cursor: default;
     content: "\0020\00B7"; // Space and Middle Dot ( ·)
 }
 
