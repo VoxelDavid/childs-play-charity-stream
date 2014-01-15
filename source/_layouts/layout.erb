@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <!-- View the "Responsive Rules" section in assets/screen.scss for more viewport rules. -->
-    <meta name="viewport" content="initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="<%= data.main.description %>">
+	<head>
 
-    <title>
-    <%=
-      # If 'title' frontmatter is found, display as "Page Title – Site title",
-      # otherwise display as "Site Title".
-      if current_page.data.title
-        current_page.data.title + " &ndash; " + data.main.title
-      else
-        data.main.title
-      end
-    %>
-    </title>
+		<meta charset="utf-8">
+		<!-- View the "Responsive Rules" section in assets/screen.scss for more viewport rules. -->
+		<meta name="viewport" content="initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="<%= data.main.description %>">
 
-    <link rel="stylesheet" href="/assets/css/screen.css">
-    <link rel="shortcut icon" href="/assets/img/favicon.png">
-  </head>
+		<title>
+		<%=
+			# If 'title' frontmatter is found, display as "Page Title – Site title",
+			# otherwise display as "Site Title".
+			if current_page.data.title
+				current_page.data.title + " &ndash; " + data.main.title
+			else
+				data.main.title
+			end
+		%>
+		</title>
 
-  <body>
-    <nav class="container primary-nav">
-      <ul class="primary-nav-primary-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about/">About</a></li>
-      </ul>
+		<link rel="stylesheet" href="/assets/css/screen.css">
+		<link rel="shortcut icon" href="/assets/img/favicon.png">
+	</head>
 
-      <ul class="primary-nav-secondary-links">
-        <li><a href="#">Donate to Child's Play</a></li>
-        <li><a href="http://twitter.com/sil3ntscript3r">Twitter</a></li>
-      </ul>
-    </nav>
+	<body>
+		<nav class="container primary-nav">
+			<ul class="primary-nav-primary-links">
+				<li><a href="/">Home</a></li>
+				<li><a href="/about/">About</a></li>
+			</ul>
 
-    <%= yield %>
+			<ul class="primary-nav-secondary-links">
+				<li><a href="#">Donate to Child's Play</a></li>
+				<li><a href="http://twitter.com/sil3ntscript3r">Twitter</a></li>
+			</ul>
+		</nav>
 
-    <div class="gradient-line"></div>
+		<%= yield %>
 
-    <footer class="container section-footer-outside">
-      <div class="section-footer">
-        <ul class="footer-links">
-          <li><a href="http://github.com/voxeldavid/childs-play-charity-stream/">Website Source</a></li>
-          <li>Made by <a href="http://voxeldavid.com">David Minnerly</a></li>
-        </ul>
-      </div>
-    </footer>
-  </body>
+		<div class="gradient-line"></div>
+
+		<footer class="container  section-footer-outside">
+		   <div class="section-footer">
+				<ul class="footer-links">
+				   <li><a href="http://github.com/voxeldavid/childs-play-charity-stream/">Website Source</a></li>
+				   <li>Made by <a href="http://voxeldavid.com">David Minnerly</a></li>
+				</ul>
+			</div>
+		</footer>
+	</body>
 </html>
