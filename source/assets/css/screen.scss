@@ -74,11 +74,6 @@ h6, .zeta    { font-size: ms(-2); }
 
 // Links
 
-a:link, a:visited {
-    color: #007CE3;
-    @include transition(.2s ease);
-}
-
 a {
     color: $link-color;
     @include transition(.2s ease);
