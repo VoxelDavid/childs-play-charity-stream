@@ -32,9 +32,9 @@
 body {
     background-color: $background-color;
 
-    /* Always keep the vertical scroll bar active for consistency between pages.
-    If a page doesn't have the scroll bar, going to a page that does causes
-    everything to shift over to the left. */
+    // Always keep the vertical scroll bar active for consistency between pages.
+    // If a page doesn't have the scroll bar, going to a page that does causes
+    // everything to shift over to the left.
     overflow-y: scroll;
 }
 
