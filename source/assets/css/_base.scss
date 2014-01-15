@@ -42,7 +42,7 @@ $ms-ratio: $golden;
 
 // Fonts
 
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Roboto+Slab:700);
 
 
 /* ^ VARIABLES
@@ -50,8 +50,8 @@ $ms-ratio: $golden;
 
 // Typography
 
-$font-stack: "Droid Sans";
-$header-font-stack: "Droid Sans"; // This needs changing. The same font for headers and text don't contrast enough.
+$font-stack: "Droid Sans", sans-serif;
+$header-font-stack: "Roboto Slab", serif;
 
 $text-color: #333333;
 $header-color: #333333;
