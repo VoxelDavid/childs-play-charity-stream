@@ -153,7 +153,13 @@ code {
 // Sections
 
 .section-donation-widgets {
-    @include span-columns(5 omega);
+    @include span-columns(7 omega);
+}
+
+.section-guidelines {
+    @include span-columns(5);
+}
+
 }
 
 
