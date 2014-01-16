@@ -194,10 +194,19 @@ code {
             margin-right: 0;
         }
 
-    .primary-nav-primary-links li a {
+    .primary-nav li a {
         display: inline-blocks;
-        padding: 1em;
-        background-color: orange;
+        padding: 0 0.5em;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $nav-link-color;
+        opacity: 0.5;
+        @include transition(.2s);
+    }
+
+    .primary-nav li a:hover {
+        opacity: 1;
     }
 
 
