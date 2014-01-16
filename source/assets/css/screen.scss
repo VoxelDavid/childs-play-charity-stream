@@ -150,6 +150,10 @@ code {
 }
 
 .container-expanded {
+    // This container needs a breakpoint for when the screen
+    // gets small enough for the chat window to be below 300px
+    // width to set its display to hidden.
+
     @include with-grid-settings(12, 4em, 1.5em, 1em) {
         @include container;
     }
@@ -166,30 +170,35 @@ code {
     @include span-columns(5);
 }
 
+    .site-logo {
+        font-size: ms(1);
+        line-height: ms(0);
+        float: left;
+    }
 }
 
 
-// Primary Navigation
+    .primary-nav {
+        float: right;
+    }
 
-// .primary-nav {
+        .primary-nav li {
+            float: left;
+            margin-right: 1em;
+            list-style-type: none;
+        }
 
-// }
+        .primary-nav li:last-child {
+            margin-right: 0;
+        }
 
-//     .primary-nav li {
-//         float: left;
-//         margin-right: 1em;
-//         list-style-type: none;
-//     }
+    .primary-nav-primary-links li a {
+        display: inline-blocks;
+        padding: 1em;
+        background-color: orange;
+    }
 
-//     .primary-nav li:last-child {
-//         margin-right: 0;
-//     }
 
-// .primary-nav-primary-links li a,
-// .primary-nav-secondary-links li a {
-//     display: inline-blocks;
-//     background-color: #eee;
-// }
 
 
 // Footer Links
