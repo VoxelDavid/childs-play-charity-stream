@@ -162,8 +162,15 @@ code {
 
 // Sections
 
+.section-header-outside {
+    border-top: 0.2em solid adjust-lightness($section-header-bg, 15);
+    background-color: $section-header-bg;
 }
 
+.section-header {
+    margin: 0 5em;
+    padding: 1em 0;
+    @include clearfix;
 }
 
     .site-logo {
