@@ -48,20 +48,31 @@ $ms-ratio: $golden;
 /* ^ DESIGN
 ===================================*/
 
-// Design
+// Fonts
 
-$font-stack         : "Droid Sans", sans-serif;
-$header-font-stack  : "Roboto Slab", serif;
+$font-stack: "Droid Sans", sans-serif;
+$header-font-stack: "Roboto Slab", serif;
 
-$background-color   : #ffffff;
 
-$text-color         : #333333;
-$header-color       : #333333;
+// Backgrounds
 
-$link-color         : #007CE3;
-$link-visited-color : $link-color;
-$link-hover-color   : #FF6200;
-$link-active-color  : $link-hover-color;
+$background-color: #ffffff;
+$section-header-bg: #293B65;
+
+
+// Text
+
+$text-color: #333333;
+$header-color: #333333;
+
+
+// Links
+
+$link-color: #007CE3;
+$link-visited-color: $link-color;
+$link-hover-color: #FF6200;
+$link-active-color: $link-hover-color;
+
 
 
 // Selection
