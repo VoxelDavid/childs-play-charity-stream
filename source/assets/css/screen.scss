@@ -162,12 +162,8 @@ code {
 
 // Sections
 
-.section-donation-widgets {
-    @include span-columns(7 omega);
 }
 
-.section-guidelines {
-    @include span-columns(5);
 }
 
     .site-logo {
@@ -175,7 +171,6 @@ code {
         line-height: ms(0);
         float: left;
     }
-}
 
 
     .primary-nav {
@@ -213,6 +208,15 @@ code {
         @include span-columns(4 omega);
     }
 
+
+.section-donation-widgets {
+    @include span-columns(5 omega);
+}
+
+.section-guidelines {
+    @include span-columns(5);
+    @include clearfix;
+}
 
 
 // Footer Links
