@@ -48,18 +48,15 @@ $ms-ratio: $golden;
 /* ^ VARIABLES
 ===================================*/
 
-// Typography
-
-$font-stack: "Droid Sans", sans-serif;
-$header-font-stack: "Roboto Slab", serif;
-
-$text-color: #333333;
-$header-color: #333333;
-
-
 // Design
 
+$font-stack         : "Droid Sans", sans-serif;
+$header-font-stack  : "Roboto Slab", serif;
+
 $background-color   : #ffffff;
+
+$text-color         : #333333;
+$header-color       : #333333;
 
 $link-color         : #007CE3;
 $link-visited-color : $link-color;
