@@ -140,7 +140,7 @@ code {
 /* ^ STRUCTURE
 ===================================*/
 
-// Grid Container
+// Grid Containers
 
 .container {
     // @include susy-grid-background;
@@ -158,45 +158,98 @@ code {
 }
 
 
-// Sections
+// Content
 
 .section-header-outside {
     border-top: 0.2em solid adjust-lightness($section-header-bg, 15);
     background-color: $section-header-bg;
 }
 
-.section-header {
-    margin: 0 5em;
-    padding: 1em 0;
-    @include clearfix;
+    .section-header {
+        margin: 0 5em;
+        padding: 1em 0;
+        @include clearfix;
+    }
+
+.section-video-player {
+    height: 24em;
+    margin-top: ms(2);
+    margin-bottom: ms(3);
 }
 
-    .site-logo h1 {
-        font-size: ms(2);
-        line-height: ms(0);
-        margin: 0;
+.section-donation-widgets {
+
+}
+
+.section-guidelines {
+
+}
+
+.footer {
+
+}
+
+    .footer-links {
+        text-align: center;
+    }
+
+    .footer-links li {
+        display: inline-block;
+    }
+
+    .footer-links li:after {
+        padding: 0 0.3em;
+        cursor: default;
+        content: "\0020\00B7"; // Space and Middle Dot ( ·)
+    }
+
+    .footer-links li:last-child:after {
+        content: none;
+    }
+
+
+// Twitch
+
+.twitch-embed-stream {
+    @include span-columns(8);
+}
+
+.twitch-embed-chat   {
+    @include span-columns(4 omega);
+}
+
+
+// Logo
+
+.site-logo h1 {
+    font-size: ms(2);
+    line-height: ms(0);
+    margin: 0;
+    float: left;
+}
+
+.site-logo a {
+    color: #f0f0f0;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+
+// Navigation
+
+.primary-nav {
+    float: right;
+}
+
+    .primary-nav li {
         float: left;
+        margin-right: 0.5em;
+        list-style-type: none;
     }
 
-    .site-logo a {
-        color: #f0f0f0;
-        text-decoration: none;
-        opacity: 0.8;
+    .primary-nav li:last-child {
+        margin-right: 0;
     }
-
-    .primary-nav {
-        float: right;
-    }
-
-        .primary-nav li {
-            float: left;
-            margin-right: 0.5em;
-            list-style-type: none;
-        }
-
-        .primary-nav li:last-child {
-            margin-right: 0;
-        }
 
     .primary-nav li a {
         display: inline-blocks;
@@ -211,52 +264,6 @@ code {
     .primary-nav li a:hover {
         opacity: 1;
     }
-
-
-.section-video-player {
-    height: 24em;
-    margin-top: ms(2);
-    margin-bottom: ms(3);
-}
-
-    .twitch-embed-stream {
-        @include span-columns(8);
-    }
-
-    .twitch-embed-chat   {
-        @include span-columns(4 omega);
-    }
-
-
-.section-donation-widgets {
-    @include span-columns(5 omega);
-}
-
-.section-guidelines {
-    @include span-columns(5);
-    @include clearfix;
-}
-
-
-// Footer Links
-
-.footer-links {
-    text-align: center;
-}
-
-.footer-links li {
-    display: inline-block;
-}
-
-.footer-links li:after {
-    padding: 0 0.3em;
-    cursor: default;
-    content: "\0020\00B7"; // Space and Middle Dot ( ·)
-}
-
-.footer-links li:last-child:after {
-    content: none;
-}
 
 
 // Other Classes
