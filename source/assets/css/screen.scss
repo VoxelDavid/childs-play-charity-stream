@@ -113,7 +113,7 @@ img {
 
 blockquote {
     font-style: italic;
-    border-left: 2px solid #FF6200;
+    border-left: 2px solid $blockquote-border-color;
     padding-right: 10em;
 
     /* Push out the blockquote so the border is outside of the page */
