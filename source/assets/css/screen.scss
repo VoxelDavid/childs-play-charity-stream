@@ -73,6 +73,7 @@ h6, .zeta    { font-size: ms(-2); }
 
 a {
     color: $link-color;
+    text-decoration: none;
     @include transition(.2s ease);
 }
 
@@ -202,7 +203,6 @@ code {
         padding: 100% 1em;
         font-weight: 600;
         text-transform: uppercase;
-        text-decoration: none;
         color: $nav-link-color;
         opacity: 0.6;
         @include transition(.1s);
