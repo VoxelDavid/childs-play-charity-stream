@@ -228,20 +228,16 @@ code {
     }
 
     .primary-nav li {
-        float: left;
-        margin-right: 0.5em;
+        display: inline-block;
+        margin: 0 1em;
         list-style-type: none;
     }
 
-    .primary-nav li:last-child {
-        margin-right: 0;
-    }
+    // Remove margin from the left on first child and right on last child.
+    .primary-nav li:last-child  { margin-right: 0; }
+    .primary-nav li:first-child { margin-left:  0; }
 
     .primary-nav li a {
-        display: inline-blocks;
-        padding: 100% 1em;
-        font-weight: 600;
-        text-transform: uppercase;
         color: $nav-link-color;
         opacity: 0.6;
         @include transition(.1s);
