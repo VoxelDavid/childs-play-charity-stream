@@ -165,11 +165,6 @@ code {
     background-color: $section-header-bg;
 }
 
-    .section-header {
-        margin: 0 5em;
-        padding: 1em 0;
-        @include clearfix;
-    }
 
 .section-video-player {
     height: 24em;
@@ -223,8 +218,14 @@ code {
 // Navigation
 
 .primary-nav {
-    float: right;
+
 }
+
+    .primary-nav ul {
+        // Remove the bottom margin, if it's going to be used it needs
+        // to be applied to .section-header-outside.
+        margin-bottom: 0;
+    }
 
     .primary-nav li {
         float: left;
