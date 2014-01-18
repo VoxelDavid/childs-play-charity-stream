@@ -212,6 +212,7 @@ code {
 
 .twitch-embed-stream {
     @include span-columns(8);
+    box-shadow: 0 6px 12px rgba(10,10,10, 0.85);
 }
 
 .twitch-embed-chat   {
