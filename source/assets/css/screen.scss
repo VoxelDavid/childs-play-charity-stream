@@ -161,7 +161,7 @@ code {
 // Content
 
 .section-header-outside {
-    border-top: 0.2em solid adjust-lightness($section-header-bg, 15);
+    box-shadow: 0 0 5px rgba(0,0,0, 0.4);
     background-color: $section-header-bg;
 }
 
@@ -229,7 +229,7 @@ code {
 }
 
 .site-logo a {
-    color: #f0f0f0;
+    color: $nav-link-color;
     text-decoration: none;
     opacity: 0.8;
 }
