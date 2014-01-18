@@ -151,6 +151,8 @@ code {
     // This container needs a breakpoint for when the screen
     // gets small enough for the chat window to be below 300px
     // width to set its display to hidden.
+    //
+    // Perhaps setting the stream to full-width.
 
     @include with-grid-settings(12, 4em, 1.5em, 1em) {
         @include container;
