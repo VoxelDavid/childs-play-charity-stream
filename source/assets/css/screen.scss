@@ -218,34 +218,33 @@ code {
 // Navigation
 
 .primary-nav {
-
-}
-
-    .primary-nav ul {
-        // Remove the bottom margin, if it's going to be used it needs
-        // to be applied to .section-header-outside.
+    ul {
+        // Remove the bottom margin, if it's going to be used it needs to
+        // be applied to .section-header-outside instead. Otherwise it just
+        // expands the container instead of pushing the contents below it.
         margin-bottom: 0;
     }
 
-    .primary-nav li {
+    li {
         display: inline-block;
         margin: 0 1em;
         list-style-type: none;
     }
 
-    // Remove margin from the left on first child and right on last child.
-    .primary-nav li:last-child  { margin-right: 0; }
-    .primary-nav li:first-child { margin-left:  0; }
+    // Remove left margin from the first child and right margin from the last child.
+    li:first-child { margin-left: 0; }
+    li:last-child  { margin-right: 0; }
 
-    .primary-nav li a {
+    li a {
         color: $nav-link-color;
         opacity: 0.6;
         @include transition(.1s);
     }
 
-    .primary-nav li a:hover {
+    li a:hover {
         opacity: 1;
     }
+}
 
 
 // Other Classes
