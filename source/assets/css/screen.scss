@@ -140,7 +140,7 @@ code {
 /* ^ STRUCTURE
 ===================================*/
 
-// Grid Containers
+/* == Grid Containers == */
 
 .container {
     // @include susy-grid-background;
@@ -160,7 +160,7 @@ code {
 }
 
 
-// Content
+/* == Content == */
 
 .section-header-outside {
     box-shadow: 0 0 5px rgba(0,0,0, 0.4);
@@ -217,7 +217,7 @@ code {
 }
 
 
-// Navigation
+/* == Navigation == */
 
 .primary-nav {
     ul {
