@@ -186,24 +186,6 @@ code {
 
 }
 
-.footer-links {
-    text-align: center;
-
-    li {
-        display: inline-block;
-    }
-
-    li:after {
-        padding: 0 0.3em;
-        cursor: default;
-        content: "\0020\00B7"; // Space and Middle Dot ( ·)
-    }
-
-    li:last-child:after {
-        content: none;
-    }
-}
-
 
 // Twitch
 
@@ -219,6 +201,7 @@ code {
 
 /* == Navigation == */
 
+// Header links
 .primary-nav {
     ul {
         // Remove the bottom margin, if it's going to be used it needs to
@@ -245,6 +228,25 @@ code {
 
     li a:hover {
         opacity: 1;
+    }
+}
+
+// Footer links
+.secondary-links {
+    text-align: center;
+
+    li {
+        display: inline-block;
+    }
+
+    li:after {
+        padding: 0 0.3em;
+        cursor: default;
+        content: "\0020\00B7"; // Space and Middle Dot ( ·)
+    }
+
+    li:last-child:after {
+        content: none;
     }
 }
 
