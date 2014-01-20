@@ -179,7 +179,7 @@ code {
 
 .twitch-embed-stream {
     @include span-columns(8);
-    box-shadow: 0 6px 12px rgba(10,10,10, 0.85);
+    box-shadow: 0 4px 16px rgba(0,0,0, 0.65);
 }
 
 .twitch-embed-chat   {
