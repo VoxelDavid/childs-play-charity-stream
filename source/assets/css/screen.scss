@@ -216,13 +216,19 @@ code {
 
 // Twitch
 
+.twitch-embed-stream,
+.twitch-embed-chat {
+    box-shadow: 0 4px 16px rgba(0,0,0, 0.65);
+}
+
 .twitch-embed-stream {
     @include span-columns(8);
-    box-shadow: 0 4px 16px rgba(0,0,0, 0.65);
 }
 
 .twitch-embed-chat   {
     @include span-columns(4 omega);
+    @include box-sizing(border-box);
+    border: 2px solid #EEEEEE;
 }
 
 
