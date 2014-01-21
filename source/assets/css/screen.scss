@@ -27,16 +27,24 @@
 // Base Styles
 
 body {
-    background-color: $background-color;
     font-size: ms(0);
     line-height: ms(1);
     font-family: $font-stack;
     color: $text-color;
 
+    // The footer's background color is applied to the body so it will span the
+    // entire height of the page. With a small amount of content the footer would
+    // just be a bar with white below it on larger resolutions, this fixes that.
+    background-color: $footer-background-color;
+
     // Always keep the vertical scroll bar active for consistency between pages.
     // If a page doesn't have the scroll bar, going to a page that does causes
     // everything to shift over to the left.
     overflow-y: scroll;
+}
+
+section {
+    background-color: $background-color;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -162,6 +170,10 @@ code {
 
 /* == Content == */
 
+// NOTE: Use padding instead of margin for seperating sections. The
+// footer's background is applied to the body, so using margin will
+// push sections away and show that background.
+
 .site-header {
     box-shadow: 0 0 5px rgba(0,0,0, 0.4);
     background-color: $section-header-bg;
@@ -169,8 +181,8 @@ code {
 
 .video-player {
     height: 24em;
-    margin-top: ms(2);
-    margin-bottom: ms(3);
+    padding-top: ms(2);
+    padding-bottom: ms(3);
 }
 
 .site-footer {
