@@ -178,6 +178,11 @@ code {
     background-color: $section-header-bg;
 }
 
+.main {
+    background: url(/assets/img/background-primary.png) no-repeat center center fixed;
+    @include background-size(cover);
+}
+
 .video-player {
     height: 24em;
     padding-top: 6em;
