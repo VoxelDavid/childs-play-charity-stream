@@ -173,6 +173,25 @@ code {
     margin-bottom: ms(3);
 }
 
+.site-footer {
+    padding-top: ms(2);
+    padding-bottom: ms(2);
+    background-color: $footer-background-color;
+    color: $footer-color;
+    font-size: .9em;
+
+    a {
+        color: $footer-link-color;
+        font-weight: normal;
+        @include transition(.2s);
+    }
+
+    a:hover {
+        color: #fff;
+        text-shadow: 0 0 4px rgba(255,255,255, 0.6);
+    }
+}
+
 
 // Twitch
 

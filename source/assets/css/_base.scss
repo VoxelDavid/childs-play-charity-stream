@@ -57,7 +57,7 @@ $mono-font-stack: "Lucida Console", monospace; // For preserved text.
 
 // Backgrounds
 
-$background-color: #ffffff;
+$background-color: #FFFFFF;
 $section-header-bg: #F1F1F1;
 
 
@@ -81,8 +81,9 @@ $nav-link-hover-color: #696969;
 $blockquote-border-color: #FF6200;
 
 
-// Selection
+// Site Footer
 
-// For later. Used for when you click and drag over text — colors need to be picked..
-// $selection-background: ;
-// $selection-color: ;
+$footer-background-color: #18191B;
+$footer-color: #A1A1A1;
+$footer-link-color: #DBDBDB;
+$footer-link-hover-color: #FFFFFF;
