@@ -199,7 +199,7 @@ code {
 
     li {
         display: inline-block;
-        margin: 0 1em;
+        margin: 0 .1em;
         list-style-type: none;
     }
 
@@ -208,13 +208,16 @@ code {
     li:last-child  { margin-right: 0; }
 
     li a {
+        display: inline-block;
+        padding: .5em 1em;
+        background-color: rgba(0,0,0, 0);
         color: $nav-link-color;
-        opacity: 0.6;
         @include transition(.1s);
     }
 
     li a:hover {
-        opacity: 1;
+        background-color: scale-lightness($section-header-bg, 50);
+        color: $nav-link-hover-color;
     }
 }
 
