@@ -28,6 +28,10 @@
 
 body {
     background-color: $background-color;
+    font-size: ms(0);
+    line-height: ms(1);
+    font-family: $font-stack;
+    color: $text-color;
 
     // Always keep the vertical scroll bar active for consistency between pages.
     // If a page doesn't have the scroll bar, going to a page that does causes
@@ -39,11 +43,6 @@ h1, h2, h3, h4, h5, h6,
 ul, ol, dd,
 p, figure, blockquote,
 pre, table, fieldset, hr {
-    font-size: ms(0);
-    line-height: ms(1);
-    font-family: $font-stack;
-    color: $text-color;
-
     margin-bottom: ms(1);
 }
 
