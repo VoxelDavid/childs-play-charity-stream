@@ -1,6 +1,10 @@
 
 {
 	"title": "Lagtest for Charity",
+	"description": "",
 	"hosts": "The Chesto Berries",
-	"description": ""
+	"hosts_uri": "thechestoberries", // Used for the stream embeds and Twitter links.
+	"charity_start_time": "3:00 PM (EST)",
+	"charity_start_date": "March 11th",
+	"charity_end_date": "March 12th"
 }
