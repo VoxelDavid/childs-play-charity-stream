@@ -2,9 +2,11 @@
 <section role="main" class="main" id="stream">
 	<div class="container-expanded">
 		<div class="video-player">
-			<object class="twitch-embed-stream" height="100%" width="100%" type="application/x-shockwave-flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=thechestoberries" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&amp;channel=thechestoberries&amp;auto_play=false&amp;start_volume=50" /></object>
+			<!-- I would use autoplay=true for this, but if you miss the play
+			     button in the center it will take you to the Twitch page. -->
+			<object class="twitch-embed-stream" height="100%" width="100%" type="application/x-shockwave-flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=<%= data.main.hosts_uri %>" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&amp;channel=<%= data.main.hosts_uri %>&amp;auto_play=true&amp;start_volume=50" /></object>
 
-			<iframe class="twitch-embed-chat" height="100%" width="100%" frameborder="0" scrolling="no"src="http://twitch.tv/chat/embed?channel=thechestoberries&amp;popout_chat=true"></iframe>
+			<iframe class="twitch-embed-chat" height="100%" width="100%" frameborder="0" scrolling="no" src="http://twitch.tv/chat/embed?channel=<%= data.main.hosts_uri %>&amp;popout_chat=true"></iframe>
 		</div>
 	</div>
 

@@ -24,7 +24,7 @@
 						<li><a href="#top">Home</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#guidelines">Chat Rules</a></li>
-						<li><a href="http://twitter.com/thechestoberries" target="_blank">Twitter</a></li>
+						<li><a href="http://twitter.com/<%= data.main.hosts_uri %>" target="_blank">Twitter</a></li>
 						<li class="donation-button"><a href="#donate">Donate</a></li>
 					</ul>
 				</nav>
@@ -36,9 +36,9 @@
 		<footer class="site-footer" id="bottom">
 			<div class="container">
 				<div class="about" id="about">
-					<p><%= data.main.title %> is a 24-hour gaming marathon to raise funds for the <a href="http://childsplaycharity.org/">Child's Play Charity</a> organization. This event was put together by <%= data.main.hosts %> &ndash; <a href="http://twitter.com/sil3ntscript3r">Matthew "Sil3nt" Jones</a> and his brother Travis &ndash; and will take place at around 3:00 PM (EST) on Friday, January 31st and run until Saturday, February 1st.</p>
+					<p><%= data.main.title %> is a 24-hour gaming marathon to raise funds for the <a href="http://childsplaycharity.org/">Child's Play Charity</a> organization. This event was put together by <%= data.main.hosts %></a> &ndash; <a href="http://twitter.com/sil3ntscript3r">Matthew "Sil3nt" Jones</a> and his brother Travis &ndash; and will take place at around <%= data.main.charity_start_time %> on <%= data.main.charity_start_date %> and run until <%= data.main.charity_end_date %>.</p>
 
-					<p>Follow on <a href="http://twitter.com/thechestoberries">Twitter</a> for updates when the stream will be going live!</p>
+					<p><a href="http://twitter.com/<%= data.main.hosts_uri %>">Follow <%= data.main.hosts %> on Twitter</a> for updates when the stream will be going live!</p>
 				</div>
 
 				<hr>
