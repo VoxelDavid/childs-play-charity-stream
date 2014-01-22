@@ -234,7 +234,11 @@ code {
 .twitch-embed-chat   {
     @include span-columns(4 omega);
     @include box-sizing(border-box);
-    border: 2px solid #EEEEEE;
+    border-radius: 4px;
+
+    // Padding doesn't work on iframes so I apply a 4 pixel border to
+    // the bottom to give it some faux-padding.
+    border-bottom: 4px solid #FFFFFF; // Same color as the chat embed.
 }
 
 
