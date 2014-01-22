@@ -1,4 +1,7 @@
 
 $(window).load(function() {
-	$.stellar();
+	$.stellar({
+		horizontalScrolling: false,
+		responsive: true,
+	});
 });
