@@ -179,7 +179,8 @@ code {
 }
 
 .main {
-    background: url(/assets/img/background-primary.png) no-repeat center center fixed;
+    background: url(/assets/img/background-mountains.jpg) no-repeat center center fixed;
+    background-color: $background-color;
     @include background-size(cover);
 }
 
@@ -187,7 +188,6 @@ code {
     height: 24em;
     padding-top: 6em;
     padding-bottom: 5em;
-
 }
 
 .site-footer {
