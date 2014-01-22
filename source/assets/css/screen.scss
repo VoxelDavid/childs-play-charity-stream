@@ -162,7 +162,7 @@ code {
     //
     // Perhaps setting the stream to full-width.
 
-    @include with-grid-settings(12, 4em, 1.5em, 1em) {
+    @include with-grid-settings(12, 4em, 1.1em, 1em) {
         @include container;
     }
 }
