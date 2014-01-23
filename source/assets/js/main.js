@@ -1,10 +1,18 @@
 
+require.config({
+	baseUrl: "assets/js/lib",
+
+	paths: {
+		app: "../app"
+	}
+});
+
 require([
-	"lib/jquery.min",
-	"lib/jquery.stellar.min",
-]), function($, stellar) {
+	"jquery",
+	"jquery.stellar"
+], function($, stellar) {
 	$.stellar({
 		horizontalScrolling: false,
 		responsive: false,
 	});
-};
+});
