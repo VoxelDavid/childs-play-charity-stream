@@ -1,7 +1,7 @@
 
-$(window).load(function() {
-	$.stellar({
-		horizontalScrolling: false,
-		responsive: true,
-	});
-});
+requirejs([
+	"lib/jquery.min",
+	"lib/jquery.stellar.min",
+]), function($, stellar) {
+
+}
