@@ -4,9 +4,10 @@ require.config({
 	paths: {
 		app: "../app",
 		jquery: "jquery-1.10.2"
+	},
+	shim: {
+		"app/main": ["jquery"]
 	}
 });
 
-// Had an issue with jQuery intermittently loading after
-// Stellar.js, adding it here seems to fix it.
-require(["jquery", "app/main"]);
+require(["app/main"]);
