@@ -1,8 +1,5 @@
 
-define([
-	"jquery",
-	"jquery.stellar"
-], function($) {
+define(["jquery", "jquery.stellar"], function($) {
 	$.stellar({
 		verticalOffset: 50,
 		horizontalScrolling: false,

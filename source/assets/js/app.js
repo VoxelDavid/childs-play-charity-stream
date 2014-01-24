@@ -7,4 +7,6 @@ require.config({
 	}
 });
 
-require(["app/main"]);
+// Had an issue with jQuery intermittently loading after
+// Stellar.js, adding it here seems to fix it.
+require(["jquery", "app/main"]);
