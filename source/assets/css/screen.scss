@@ -179,8 +179,9 @@ code {
 }
 
 .main {
-    background: url(/assets/img/background-mountains.jpg) no-repeat center center fixed;
-    background-color: $background-color;
+    background-color: #170910;
+    background-image: url(/assets/img/background-mountains.jpg);
+    background-attachment: fixed;
     @include background-size(cover);
 }
 
